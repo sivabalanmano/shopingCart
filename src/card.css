@@ -19,6 +19,7 @@ a{
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #212529;
     color: white;
     padding: 25px 60px;
@@ -49,6 +50,7 @@ a{
      grid-template-columns: repeat(4,223px);
      gap: 30px;
      justify-content: center;
+     margin-bottom: 50px;
 }
 @media (max-width:1000px){
     .shop{
@@ -63,6 +65,10 @@ a{
 .item{
     border: 2px solid black;
     border-radius: 4px;
+}
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
 }
 .details{
     display: flex;
@@ -94,7 +100,7 @@ a{
     text-align: center;
     margin-bottom: 20px;
 }
-.HomeBtn{
+.HomeBtn,.chekout,.removeAll{
     background: #212529;
     color: white;
     border: none;
@@ -102,6 +108,12 @@ a{
     border-radius: 3px;
     cursor: pointer;
     margin-top: 10px;
+}
+.chekout{
+    color: green;
+}
+.removeAll{
+    color: red;
 }
 
 .bi-x-lg{
@@ -131,4 +143,15 @@ a{
     align-items: center;
     justify-content: space-between;
 
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card-item-price{
+    background-color: #212529;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
 }
